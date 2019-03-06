@@ -13,8 +13,7 @@ public class MessageController {
 
     @MessageMapping("/hello")
     @SendTo("/topic/greetings")
-    public Greeting greeting(HelloMessage message) throws Exception {
-        Thread.sleep(1000); // simulated delay
-        return new Greeting("Hello, " + HtmlUtils.htmlEscape(message.getName()) + "!");
+    public Greeting greeting(Message message) throws Exception {
+        return new Greeting( HtmlUtils.htmlEscape(message.getSentBy()) + " says: " + message.getContent());
     }
 }
