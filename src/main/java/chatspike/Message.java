@@ -1,4 +1,4 @@
-package message;
+package chatspike;
 
 /**
  * Created by brynach on 03/03/2019.

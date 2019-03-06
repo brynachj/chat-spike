@@ -1,3 +1,5 @@
+package chatspike;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -8,7 +10,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ChatSpike {
 
     public static void main(String[] args) {
-        System.out.println("In chat spike");
         SpringApplication.run(ChatSpike.class, args);
     }
 }
